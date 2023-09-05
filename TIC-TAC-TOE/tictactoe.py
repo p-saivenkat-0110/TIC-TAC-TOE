@@ -7,8 +7,7 @@ sh=root.winfo_screenheight()
 root.wm_minsize(sw,sh)
 root.title("Tic-Tac-Toe")
 root.configure(bg="#2b061b")
-game=tkinter.Label(root,text="TIC-TAC-TOE",font=("Times New Roman",65),
-                   bg="#2b061b",fg="white",padx=100)
+game=tkinter.Label(root,text="TIC-TAC-TOE",font=("Times New Roman",65),bg="#2b061b",fg="white",padx=100)
 game.place(x=sw//2,y=10)
 
 board=[["-" for _ in range(3)] for _ in range(3)]
@@ -194,7 +193,7 @@ b9.grid(row=2,column=2)
 gridFrame.pack(side="left",padx=50)
 
 
-player1_img=tkinter.PhotoImage(file=r"C:\Users\saive\OneDrive\Desktop\CODING WORK\Python programs\TIC-TAC-TOE\player.png")
+player1_img=tkinter.PhotoImage(file="player.png")
 player1=tkinter.Label(root,image=player1_img)
 player1.place(x=(sw//2)+95,y=sh//5)
 player2=tkinter.Label(root,image=player1_img)
